@@ -1,2 +1,0 @@
-# NaughtyDogRevampVanilla
-Created with CodeSandbox
