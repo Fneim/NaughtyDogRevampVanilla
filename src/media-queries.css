@@ -1,0 +1,231 @@
+/* Media Queries */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width: 300px) {
+  /* content styles */
+  .media-left-content,
+  .media-right-content {
+    width: 100%;
+    height: 200px;
+  }
+
+  .media-right-content {
+    background: #eee;
+  }
+
+  .media-lastofus h3 {
+    font-size: 25px;
+  }
+
+  .blog {
+    margin: auto;
+    padding: 15px;
+  }
+
+  .post img {
+    width: 100%;
+  }
+
+  .games-container {
+    height: auto;
+  }
+
+  .games-container div,
+  .games-container div video {
+    width: 100%;
+    position: relative;
+  }
+
+  .games-container div a {
+    position: absolute;
+    bottom: 0px;
+  }
+}
+
+/* responsive navbar styles */
+
+@media only screen and (max-width: 767px) {
+  .navbar li a:first-child {
+    display: none;
+  }
+  .fa-bars {
+    color: #fff;
+    font-size: 27px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 301px) and (max-width: 480px) {
+  .media-left-content,
+  .media-right-content {
+    width: 100%;
+    height: 250px;
+  }
+
+  .media-right-content {
+    background: #eee;
+  }
+
+  .media-left-content div,
+  .media-right-content div {
+    display: inline;
+  }
+
+  .media-lastofus h3 {
+    font-size: 30px;
+  }
+
+  .blog-container {
+    width: 100%;
+  }
+
+  .blog {
+    margin: auto;
+    padding: 15px;
+  }
+
+  .post img {
+    width: 100%;
+  }
+
+  .games-container {
+    height: auto;
+  }
+
+  .games-container div,
+  .games-container div video {
+    width: 100%;
+    position: relative;
+  }
+
+  .games-container div a {
+    position: absolute;
+    bottom: 0px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  .media-left-content,
+  .media-right-content {
+    width: 100%;
+    height: 300px;
+  }
+
+  .media-right-content {
+    background: #eee;
+  }
+
+  .media-lastofus h3 {
+    font-size: 35px;
+  }
+
+  .blog-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .media-left-content,
+  .media-right-content {
+    width: 100%;
+    height: 360px;
+  }
+
+  .media-right-content {
+    background: #eee;
+  }
+
+  .media-lastofus h3 {
+    font-size: 40px;
+  }
+
+  .blog-container {
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .fa-bars {
+    display: none;
+  }
+  .media-left-content,
+  .media-right-content {
+    width: 50%;
+    height: 350px;
+    display: inline-block;
+  }
+
+  .media-left-content,
+  .blog-container {
+    float: left;
+  }
+
+  .clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+
+  .media-right-content {
+    float: right;
+    background: #eee;
+  }
+
+  .media-lastofus h3 {
+    font-size: 45px;
+  }
+
+  .blog-container {
+    width: 50%;
+    display: inline-block;
+  }
+
+  .games-container {
+    height: auto;
+  }
+
+  .games-container div video {
+    width: 100%;
+    position: relative;
+  }
+
+  .games-container div {
+    height: 50%;
+    position: relative;
+  }
+
+  .games-container div a {
+    position: absolute;
+    bottom: 0px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .media-left-content,
+  .media-right-content {
+    height: 370px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1224px) {
+  .media-left-content,
+  .media-right-content {
+    height: 420px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .media-left-content,
+  .media-right-content {
+    height: 520px;
+  }
+}

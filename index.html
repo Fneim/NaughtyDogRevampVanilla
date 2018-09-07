@@ -3,7 +3,10 @@
 <head>
 	<title>Parcel Sandbox</title>
 	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+	 crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="src/main.css" />
+	<link rel="stylesheet" type="text/css" href="src/media-queries.css" />
 </head>
 
 <body>
@@ -16,33 +19,91 @@
 				<img src="https://uploads.codesandbox.io/uploads/user/cad5fda9-d474-4658-8faf-25d837b04955/wOlT-logo_header.png" />
 			</div>
 			<div class="nav">
-				<ul>
+				<ul class="navbar">
 					<li><a href="/">COMPANY</a></li>
 					<li><a href="/">GAMES</a></li>
 					<li><a href="/">BLOG</a></li>
 					<li><a href="/">MEDIA</a></li>
 					<li><a href="/">FORUM</a></li>
 					<li><a href="/">SUPPORT</a></li>
+					<a href="javascript:void(0);" onclick="dropDown()"><i class="fas fa-bars"></a>
 				</ul>
 			</div>
 		</div>
 
-		<!-- second main div for pictorial content -->
-		<div class="main-content">
-			<div>
-				<img id="lastofus" src="https://uploads.codesandbox.io/uploads/user/cad5fda9-d474-4658-8faf-25d837b04955/Oe9S-TheLastofUsPartII_PGW_YT_Thumbnail.jpg" 
-				width="100%" height="auto"/>
+		<!-- left side of html -->
+		<!-- left main div for pictorial content -->
+		<div class="media-left-content">
+			<div class="media-lastofus clearfix">
+				<img src="src/lastofus.jpg" />
+				<h3><a href="https://www.naughtydog.com/blog/the_last_of_us_part_ii_gameplay_revealed">The Last of Us Part II</a></h3>
 			</div>
-			<section class="blog">
-				<div class="blog-div">
-					<h4>Blog 1</h4>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-						Lorem Ipsum has been the industry's standard dum</p>
-				</div>
-			</section>
 		</div>
+
+		<div class="media-right-content">
+			<div class="games-container clearfix">
+				<div>
+					<video muted="" autoplay="" loop="" id="">
+						<source src="https://s3-us-west-1.amazonaws.com/nd.videos/uncharted__homepage.mp4"> Your browser does not support the <code>video</code> element.
+					</video>
+					<a href="https://www.naughtydog.com/blog/uncharted_the_lost_legacy_is_out_now_on_ps4"><h4>Uncharted: The Lost Legacy is Out Now on PS4</h4></a>
+				</div>
+				<div>
+					<video muted="" autoplay="" loop="" id="">
+						<source src="https://s3-us-west-1.amazonaws.com/nd.videos/uncharted__thief.mp4"> Your browser does not support the <code>video</code> element.
+					</video>
+					<a href="https://www.naughtydog.com/blog/uncharted-4-2nd-anniversary"><h4>Celebrating the Anniversary of Uncharted 4: A Thief’s End</h4></a>
+				</div>
+
+				<div>
+					<p><a>another video</a></p>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="blog-container clearfix">
+			<div class="blog clearfix">
+				<h2>__BLOG</h2>
+				<!-- first post -->
+				<div class="post clearfix">
+					<img src="https://s3.amazonaws.com/nd.images/uploads/_homepageLatestPost/TLOUP2_1920x1080.jpg" 
+					alt="The Last of Us Part II @ E3 2018: Full Schedule, New Merch and Mondo Vinyl, and more"/>
+					<h4>The Last of Us Part II @ E3 2018: Full Schedule, New Merch and Mondo Vinyl, and more</h4>
+					<span>Everything you need to know about The Last of Us Part II and Naughty Dog at the big event.</span>
+				</div>
+				<!-- second post -->
+				<div class="post clearfix">
+					<img src="src/lastofus.jpg" alt="The Last of Us Part II @ E3 2018: Full Schedule, New Merch and Mondo Vinyl, and more"
+					/>
+					<h4>The Last of Us Part II Gameplay Revealed</h4>
+					<span>See over 10 minutes of new footage from The Last of Us Part II.</span>
+				</div>
+				<!-- third post -->
+				<div class="post clearfix">
+					<img src="src/uncharted.png" alt="The Last of Us Part II @ E3 2018: Full Schedule, New Merch and Mondo Vinyl, and more"
+					/>
+					<h4>Celebrating the Anniversary of Uncharted 4: A Thief’s End</h4>
+					<span>We're honoring the two year anniversary of Uncharted 4's release with new iMessage Stickers and a new PS4 system theme!</span>
+				</div>
+
+				<div class="post clearfix">
+					<img src="src/cdc.jpg" />
+					<h4>Naughty Dog at GDC 2018</h4>
+					<span>Attending Game Developers Conference? Don't miss these talks featuring Naughty Dog devs.</span>
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="media-right-content">
+		
+		</div>
+		
 	</div>
 
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
 	<script src="src/index.js"></script>
 </body>
 
